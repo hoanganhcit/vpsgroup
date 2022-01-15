@@ -1813,3 +1813,37 @@ textarea.form-none-control {
 	resize: none;
 	min-height: 100px;
 }
+
+.posts-section-content {
+	padding-top: 50px;
+}
+.post-feature-info {
+    position: relative;
+}
+
+.post-feature-info h1 {
+    font-size: 26px;
+}
+
+.post-feature-info p {
+    font-size: 13px;
+}
+
+.post-feature-info {
+    font-size: 13px;
+}
+
+.post-feature-info h2, 
+.post-feature-info h3. 
+.post-feature-info h4, 
+.post-feature-info h5 {
+    font-size: 18px;
+}
+.new-posts {
+    position: relative;
+}
+
+.new-posts a {
+    font-size: 13px;
+    color: #081d3e;
+}
