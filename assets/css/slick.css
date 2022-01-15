@@ -187,17 +187,22 @@
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
-
     opacity: .75;
     color: white;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #084298;
+    border-radius: 100%;
 }
 
 .slick-prev
 {
-    left: 35px;
+    left: 20px;
     z-index: 1;
 }
 [dir='rtl'] .slick-prev
@@ -216,7 +221,7 @@
 
 .slick-next
 {
-    right: 35px;
+    right: 40px;
     z-index: 1;
 }
 [dir='rtl'] .slick-next
