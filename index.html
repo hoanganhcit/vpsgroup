@@ -59,6 +59,7 @@
 								<ul role="menu" class="menu text-capitalize"> 
 									<li>
 										<a href="index.html">Trang chủ</a> 
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="index-2.html">Trang chủ 2</a>   
@@ -70,9 +71,11 @@
 									</li> 
 									<li>
 										<a href="shop.html">Sản phẩm</a>
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li class="cat-item">
 												<a href="">Máy đếm tiền</a>
+												<span class="droppdown-children fal fa-chevron-down"></span>
 												<ul class="children">
 													<li class="cat-item">
 														<a href="#">Máy đếm tiền cao cấp</a>
@@ -90,6 +93,7 @@
 											</li>
 											<li class="cat-item">
 												<a href="#">Máy tính</a>
+												<span class="droppdown-children fal fa-chevron-down"></span>
 												<ul class="children">
 													<li class="cat-item">
 														<a href="#">Máy tính hàn quốc</a>
@@ -110,6 +114,7 @@
 									</li> 
 									<li>
 										<a href="blog.html">Tin tức</a>
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="#">Tin tức về VPS</a>  
@@ -121,6 +126,7 @@
 									</li>
 									<li>
 										<a href="vps-academy.html">VPS Academy</a> 
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="#">Reviews Sản Phẩm</a>  
@@ -865,125 +871,6 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.js"></script>
-	<script>
-		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			return new bootstrap.Tooltip(tooltipTriggerEl)
-		});
-
-		$(window).scroll(function(){
-			if ($(window).scrollTop() >= 200) {
-				$('.navbar-menu').addClass('fixed-menu');
-			}
-			else {
-				$('.navbar-menu').removeClass('fixed-menu');
-			}
-		});
-		$(document).ready(function(){
-
-			$(window).on("load", function () {
-				setTimeout(function () {
-					$("#preloader").fadeOut("slow", function () {});
-				}, 1000);
-			});
-
-			var lengt_product = $('.product-item').size();
-			if(lengt_product > 5) { 
-				$('.products-home').slick({
-					centerMode: true,
-					centerPadding: '30px',
-					slidesToShow: 5,
-					autoplay: true,
-					autoplaySpeed: 5000,
-					dots: true,
-					responsive: [
-					{
-						breakpoint: 1400,
-						settings: { 
-							arrows: false,
-							centerMode: true,
-							centerPadding: '30px',
-							slidesToShow: 5
-						}
-					},
-					{
-						breakpoint: 900,
-						settings: {
-							arrows: false,
-							centerMode: true,
-							centerPadding: '10px',
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
-							centerMode: true,
-							centerPadding: '40px',
-							slidesToShow: 1
-						}
-					}
-					]
-				});
-			}
-
-			var lengt_project = $('.project-item').size();
-			if(lengt_project > 3) { 
-				$('.project-home').slick({
-					slidesToShow: 3,
-					autoplay: true,
-					autoplaySpeed: 5000,
-					dots: true,
-					arrows:false,
-					responsive: [
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
-							centerMode: true,
-							centerPadding: '40px',
-							slidesToShow: 1
-						}
-					}
-					]
-				});
-
-			}
-
-			var lengt_post = $('.post-home .project-item').size();
-			if(lengt_post > 2) { 
-				$('.post-home').slick({
-					slidesToShow: 2,
-					autoplay: true,
-					autoplaySpeed: 5000,
-					dots: true,
-					arrows:false,
-					responsive: [
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
-							slidesToShow: 1
-						}
-					}
-					]
-				});
-				
-			}
-
-			$('.count').each(function () {
-				$(this).prop('Counter',100).animate({
-					Counter: $(this).text()
-				}, {
-					duration: 4000,
-					easing: 'swing',
-					step: function (now) {
-						$(this).text(Math.ceil(now));
-					}
-				});
-			});
-		});
-	</script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

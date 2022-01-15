@@ -466,6 +466,7 @@ label {
 	z-index: 9999;
 	padding: 0;
 	transition: .5s;
+	padding: 0 15px;
 }
 
 .fixed-menu.navbar-menu .navbar-brand {
@@ -1846,4 +1847,8 @@ textarea.form-none-control {
 .new-posts a {
     font-size: 13px;
     color: #081d3e;
+}
+.droppdown-submenu, 
+.droppdown-children {
+    display: none;
 }
