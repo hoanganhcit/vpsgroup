@@ -15,3 +15,49 @@
 		background-position: bottom;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.project-item {
+		width: 100%;
+	}
+	.timeline-about:before, .t-left:before, .t-left:after {display: none;}
+
+	.t-left {
+		padding: 0;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.timeline-item {
+		flex-direction: column-reverse;
+	}
+
+	.t-left .t-box {
+		text-align: left;
+	}
+
+	.t-left .title-sm, .t-right .title-sm {
+		max-width: 100%;
+	}
+
+	.t-box .title-md {
+		margin-bottom: 15px;
+	}
+
+	.t-image img {
+		width: 100%;
+		height: auto;
+	}
+
+	.t-right {
+		padding: 0;
+	}
+
+	.t-image {
+		margin-bottom: 15px;
+	}
+
+	.timeline-item.flex-reserve {
+		flex-direction: column;
+	}
+}
