@@ -1,0 +1,17 @@
+@media screen and (max-width: 1366px) {
+	.box {
+		min-height: 240px;
+	}
+	
+	.inner-box .box {
+		min-height: 150px;
+	}
+	.product-item.slick-slide {
+		padding: 0 5px;
+	}
+	.overylay-img-background {
+		max-width: 600px;
+		background-size: 110%;
+		background-position: bottom;
+	}
+}
