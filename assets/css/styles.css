@@ -640,6 +640,7 @@ label {
 	font-size: 32px;
 	color: var(--dc-third-color);
 	position: relative;
+	text-transform: uppercase;
 }
 .section-why-about {
 	position: relative;
@@ -973,6 +974,7 @@ label {
 	padding: 25px 30px 35px 30px;
 	background: #ffffff;
 	border-radius: 10px;
+	box-shadow: 0 0 40px rgb(0 0 0 / 5%);
 }
 
 .project-img img {
@@ -1757,4 +1759,57 @@ span.sku {
 
 .products-related .product-item {
 	width: 25%;
+}
+.posts-section .project-item {
+	margin-bottom: 30px;
+	padding: 0 30px;
+}
+.map-section {
+    position: relative;
+}
+
+.maps {
+    position: relative;
+    width: 100%;
+}
+
+.map-section iframe {
+    width: 100%;
+}
+.module-content {
+    color: #fff;
+    font-size: 13px;
+}
+
+.module-content p {
+    margin-bottom: 5px;
+}
+.form-group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-contact-1 {
+    position: relative;
+}
+
+.form-none-control {
+    width: 100%;
+    border: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-size: 13px;
+    outline: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.form-none-control::placeholder {
+    color: rgb(255 255 255 / 60%);
+    font-weight: 300;
+}
+textarea.form-none-control {
+	resize: none;
+	min-height: 100px;
 }
