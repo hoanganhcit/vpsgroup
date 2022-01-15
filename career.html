@@ -43,10 +43,11 @@
 						</button>
 						<div class="main-menu">
 							<nav id="dropdown-menu">
-								<div class="title-menu-mobile"> Menu</div>  
+								<div class="title-menu-mobile">Đóng Menu</div>  
 								<ul role="menu" class="menu text-capitalize"> 
 									<li>
 										<a href="index.html">Trang chủ</a> 
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="index-2.html">Trang chủ 2</a>   
@@ -58,9 +59,11 @@
 									</li> 
 									<li>
 										<a href="shop.html">Sản phẩm</a>
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li class="cat-item">
 												<a href="">Máy đếm tiền</a>
+												<span class="droppdown-children fal fa-chevron-down"></span>
 												<ul class="children">
 													<li class="cat-item">
 														<a href="#">Máy đếm tiền cao cấp</a>
@@ -78,6 +81,7 @@
 											</li>
 											<li class="cat-item">
 												<a href="#">Máy tính</a>
+												<span class="droppdown-children fal fa-chevron-down"></span>
 												<ul class="children">
 													<li class="cat-item">
 														<a href="#">Máy tính hàn quốc</a>
@@ -98,6 +102,7 @@
 									</li> 
 									<li>
 										<a href="blog.html">Tin tức</a>
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="#">Tin tức về VPS</a>  
@@ -109,6 +114,7 @@
 									</li>
 									<li>
 										<a href="vps-academy.html">VPS Academy</a> 
+										<span class="droppdown-submenu fal fa-chevron-down"></span>
 										<ul class="sub-menu-nav">
 											<li>
 												<a href="#">Reviews Sản Phẩm</a>  
@@ -132,12 +138,6 @@
 									</li>
 								</ul>
 							</nav> 
-							<div class="menu-icon">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
 						</div>
 					</nav>
 				</div>
@@ -409,17 +409,6 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.js"></script>
-	<script>
-
-		$(window).scroll(function(){
-			if ($(window).scrollTop() >= 200) {
-				$('.navbar-menu').addClass('fixed-menu');
-			}
-			else {
-				$('.navbar-menu').removeClass('fixed-menu');
-			}
-		});
-
-	</script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

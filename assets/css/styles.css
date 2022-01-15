@@ -305,79 +305,6 @@ label {
 .main-menu .menu li a:hover {
 	color: #fff;
 }
-.menu-icon
-{
-	position: relative;
-	width: 35px;
-	height: 21px;
-	cursor: pointer;
-	display: none;
-	transition: .5s;
-}
-.menu-icon span
-{
-	display: block;
-
-	width: 35px;
-	height: 2px;
-	margin-bottom: 7px;
-
-	-webkit-transition: all .24s cubic-bezier(.19, 1, .22, 1);
-	transition: all .24s cubic-bezier(.19, 1, .22, 1); 
-
-	border-radius: 0 999px;
-	background: #fff;
-}
-.menu-icon span:nth-child(2)
-{
-	width: 20px;
-}
-.menu-icon span:nth-child(4)
-{
-	position: absolute;
-	top: 50%;
-	right: 0;
-
-	width: 15px;
-
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-
-	background: transparent;
-}
-.menu-icon:hover span:nth-child(2)
-{
-	width: 15px; 
-	margin-left: 10px;
-}
-.menu-icon.open-menu span:nth-child(1)
-{
-	-webkit-transform: rotate(45deg) translateX(9px);
-	-ms-transform: rotate(45deg) translateX(9px);
-	transform: rotate(45deg) translateX(9px);
-	background: #ffffff;
-}
-.menu-icon.open-menu span:nth-child(2)
-{
-	margin-left: -20px;
-
-	opacity: 0;
-}
-.menu-icon.open-menu span:nth-child(3)
-{
-	-webkit-transform: rotate(-45deg) translate(13px, -4px);
-	-ms-transform: rotate(-45deg) translate(13px, -4px);
-	transform: rotate(-45deg) translate(13px, -4px);
-	background: #ffffff;
-}
-.menu-icon.open-menu span:nth-child(4)
-{
-	margin-right: -20px;
-
-	opacity: 0; 
-	background: #fff;
-}
 
 .sub-menu-nav {
 	position: absolute;
@@ -796,10 +723,10 @@ label {
 	font-size: 18px;
 	margin: 15px 0;
 }
-.product-home .product-item.slick-slide {
+.products-home .product-item {
 	transform: scale(0.85);
 } 
-.product-home .product-item.slick-slide.slick-center {transform: scale(1);}
+.products-home .product-item.slick-slide.slick-center {transform: scale(1);}
 
 .section-structure {
 	background: url(../images/vps-edit-color-01.jpg) top no-repeat;
@@ -1236,6 +1163,7 @@ label {
 .ab-img img {
 	max-height: 400px;
 	width: auto;
+	max-width: 100%;
 }
 .button-primary {
 	background: #fff;
