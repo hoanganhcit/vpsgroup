@@ -42,7 +42,7 @@ img {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	background: linear-gradient(180deg, #052131 0%, #1B4D6A 100%);
+	background: #081d3e;
 	justify-content: center;
 }
 .preloader-inner .cancel-preloader {
