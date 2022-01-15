@@ -882,7 +882,16 @@
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 			return new bootstrap.Tooltip(tooltipTriggerEl)
-		})
+		});
+
+		$(window).scroll(function(){
+			if ($(window).scrollTop() >= 200) {
+				$('.navbar-menu').addClass('fixed-menu');
+			}
+			else {
+				$('.navbar-menu').removeClass('fixed-menu');
+			}
+		});
 		$(document).ready(function(){
 
 			$(window).on("load", function () {

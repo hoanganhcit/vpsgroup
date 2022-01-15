@@ -435,21 +435,36 @@ img {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	transition: .5s;
+	/* transition: .5s; */
+	background: transparent;
 }
 
 .navbar-menu .navbar-brand {
-	opacity: 0;
-	visibility: hidden;
-	width: 0;
-	margin: 0;
+	display: none;
 }
 
 .navbar-dark .navbar-brand {
 	transition: .5s;
 }
 
+.navbar.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #084298;
+    z-index: 9999;
+    padding: 0;
+    transition: .5s;
+}
 
+.fixed-menu.navbar-menu .navbar-brand {
+    display: inline-block;
+}
+
+.fixed-menu .main-menu .menu li {
+    padding: 0 20px;
+}
 .banner-area {
 	position: relative;
 	background-image: url(../images/background.jpg);
