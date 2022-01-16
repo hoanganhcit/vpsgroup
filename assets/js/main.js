@@ -10,7 +10,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
-	AOS.init();
+	
 	
 	$(window).on("load", function () {
 		setTimeout(function () {
