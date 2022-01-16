@@ -159,6 +159,9 @@
 	}
 }
 @media screen and (max-width: 500px) {
+	.children {
+		display: none;
+	}
 	.title-large {
 		font-size: 24px;
 	}
@@ -309,5 +312,5 @@
 	.section-project.v2 .section-title {
 		text-align: center;
 	}
-	
+
 }

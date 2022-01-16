@@ -1472,9 +1472,6 @@ label {
 	padding-top: 10px;
 	border-top: 0;
 } 
-ul.children {
-	display: none;
-}
 .widget ul.sub-menu, .widget ul.children {
 	padding-left: 20px;
 	margin-top: 15px;
