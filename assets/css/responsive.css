@@ -283,4 +283,31 @@
 	.detail-info {
 		margin-top: 30px;
 	}
+	.section-project.v2 {
+		padding-bottom: 70px;
+	}
+	.section-project.v2 #project_image .slick-list {
+		padding: 30px 0 !important;
+	}
+	#project_image .project-item {
+		padding: 0;
+	}
+	#project_desc, #project_image {
+		padding: 10px;
+	}
+
+	.structure-v2-info p {
+		font-size: 16px;
+	}
+	.structure-v2-info p span {
+		font-size: 24px;
+	}
+
+	.structure-v2-title {
+		font-size: 20px;
+	}
+	.section-project.v2 .section-title {
+		text-align: center;
+	}
+	
 }
