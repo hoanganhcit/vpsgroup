@@ -1602,7 +1602,7 @@ ul.children {
 	background: #081d3e;
 }
 
-.post-gallery {
+.post-gallery, .grid-gallery {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
