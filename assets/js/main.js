@@ -213,6 +213,7 @@ $(document).ready(function(){
 	$('.slide-gallery').slick({
 		slidesToShow: 1,
 		autoplay: true,
+		// fade: true,
 		autoplaySpeed: 5000,
 		dots: false,
 		arrows:true
