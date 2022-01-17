@@ -1475,6 +1475,7 @@ label {
 .widget ul.sub-menu, .widget ul.children {
 	padding-left: 20px;
 	margin-top: 15px;
+	display: none;
 }
 .widget ul.children li {
 	position: relative;

@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/aos.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -188,7 +188,7 @@
 					<div class="timeline-about">
 						<div class="timeline-item row">
 							<div class="col-md-6 col-xs-12">
-								<div class="t-left">
+								<div class="t-left" data-aos="fade-right">
 									<div class="t-box">
 										<h3 class="title-md">
 											<a href="#">Lịch Sử Hình Thành</a>
@@ -206,7 +206,7 @@
 								</div>
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<div class="t-right">
+								<div class="t-right" data-aos="fade-left">
 									<div class="t-image">
 										<img src="assets/images/project-2.jpg">
 									</div>
@@ -215,14 +215,14 @@
 						</div>
 						<div class="timeline-item flex-reserve row">
 							<div class="col-md-6 col-xs-12">
-								<div class="t-left">
+								<div class="t-left" data-aos="fade-right">
 									<div class="t-image">
 										<img src="assets/images/project-2.jpg">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<div class="t-right"> 
+								<div class="t-right" data-aos="fade-left"> 
 									<div class="t-box">
 										<h3 class="title-md">
 											<a href="#">SỨ MỆNH - TẦM NHÌN - GIÁ TRỊ CỐT LÕI </a>
@@ -242,7 +242,7 @@
 						</div> 
 						<div class="timeline-item row">
 							<div class="col-md-6 col-xs-12">
-								<div class="t-left">
+								<div class="t-left" data-aos="fade-right">
 									<div class="t-box">
 										<h3 class="title-md">
 											<a href="#"> SƠ ĐỒ TỔ CHỨC </a>
@@ -260,7 +260,7 @@
 								</div>
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<div class="t-right">
+								<div class="t-right" data-aos="fade-left">
 									<div class="t-image">
 										<img src="assets/images/project-2.jpg">
 									</div>
@@ -269,14 +269,14 @@
 						</div>
 						<div class="timeline-item flex-reserve row">
 							<div class="col-md-6 col-xs-12">
-								<div class="t-left">
+								<div class="t-left" data-aos="fade-right">
 									<div class="t-image">
 										<img src="assets/images/project-2.jpg">
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-xs-12">
-								<div class="t-right"> 
+								<div class="t-right" data-aos="fade-left"> 
 									<div class="t-box">
 										<h3 class="title-md">
 											<a href="#">VĂN HÓA DOANH NGHIỆP</a>
@@ -508,12 +508,13 @@
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/js/aos.min.js"></script>
 	<script type="text/javascript" src="assets/js/slick.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script>
 
 		$(document).ready(function() {
-
+			AOS.init();
 			var lengt_project = $('.about-page-project .project-item').size();
 				if(lengt_project > 3) { 
 					$('.about-page-project').slick({
